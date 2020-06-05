@@ -10,7 +10,7 @@ public class PowerUpSpeedUp : MonoBehaviour
         Tank = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void OnCollisionEnter(Collision collision) //deals with collision
+    void OnTriggerEnter(Collider collision) //deals with collision
     {
         if (collision.gameObject.tag == "Player") //if the player touches the object
         {

@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
-namespace Complete
-{
-    public class TankMovement : MonoBehaviour
+//namespace Complete
+//{
+public class TankMovement : MonoBehaviour
     {
         public int m_PlayerNumber = 1;              // Used to identify which tank belongs to which player.  This is set by this tank's manager.
         public float m_Speed = 12f;                 // How fast the tank moves forward and back.
@@ -26,7 +27,7 @@ namespace Complete
         }
 
 
-        private void OnEnable ()
+        public void OnEnable ()
         {
             // When the tank is turned on, make sure it's not kinematic.
             m_Rigidbody.isKinematic = false;
@@ -59,7 +60,7 @@ namespace Complete
         }
 
 
-        private void Start ()
+        public void Start ()
         {
             // The axes names are based on player number.
             m_MovementAxisName = "Vertical" + m_PlayerNumber;
@@ -70,7 +71,7 @@ namespace Complete
         }
 
 
-        private void Update ()
+        public void Update ()
         {
             // Store the value of both input axes.
             m_MovementInputValue = Input.GetAxis (m_MovementAxisName);
@@ -108,7 +109,7 @@ namespace Complete
         }
 
 
-        private void FixedUpdate ()
+        public void FixedUpdate ()
         {
             // Adjust the rigidbodies position and orientation in FixedUpdate.
             Move ();
@@ -116,7 +117,7 @@ namespace Complete
         }
 
 
-        private void Move ()
+        public void Move ()
         {
             // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
             Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
@@ -126,7 +127,7 @@ namespace Complete
         }
 
 
-        private void Turn ()
+        public void Turn ()
         {
             // Determine the number of degrees to be turned based on the input, speed and time between frames.
             float turn = m_TurnInputValue * m_TurnSpeed * Time.deltaTime;
@@ -138,4 +139,4 @@ namespace Complete
             m_Rigidbody.MoveRotation (m_Rigidbody.rotation * turnRotation);
         }
     }
-}
+
