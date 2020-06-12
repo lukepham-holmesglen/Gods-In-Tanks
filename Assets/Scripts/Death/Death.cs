@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
+    [SerializeField] private GameObject _deathMesh;
+
     private GameObject _affectedTank;
 
     // Start is called before the first frame update
@@ -24,6 +26,7 @@ public class Death : MonoBehaviour
         {
             _affectedTank = collision.gameObject;
             _affectedTank.GetComponent<TankHealth>().OnDeath();
+            _deathMesh.transform.position = new Vector3(0f, 0f, 0f);
         }
     }
 

@@ -9,7 +9,7 @@ public class Slow : MonoBehaviour
     [SerializeField] private float _tankNormalSpeed = 12f;
     [SerializeField] private float _tankSlowSpeed = 2f;
 
-    private GameObject _affectedTank;
+    private List<GameObject> _affectedTanks = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +27,23 @@ public class Slow : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            _affectedTank = collision.gameObject;
-            _affectedTank.GetComponent<TankMovement>().m_Speed = _tankSlowSpeed;
+            _affectedTanks.Add(collision.gameObject);
+            foreach (var affectedTank in _affectedTanks)
+            {
+                affectedTank.GetComponent<TankMovement>().m_Speed = _tankSlowSpeed;
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == _affectedTank)
+        foreach (var affectedTank in _affectedTanks)
         {
-            _affectedTank.GetComponent<TankMovement>().m_Speed = _tankNormalSpeed;
+            if (other.gameObject == affectedTank)
+            {
+                affectedTank.GetComponent<TankMovement>().m_Speed = _tankNormalSpeed;
+                _affectedTanks.Remove(affectedTank);
+            }
         }
     }
 
