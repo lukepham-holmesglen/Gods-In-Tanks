@@ -18,7 +18,7 @@ public class PowerUp : MonoBehaviour
     private GameObject _affectedTank;
     private MeshRenderer _meshRenderer;
     private Collider _collider;
-    public enum powerUpType { SpeedBoost, HealthBoost};
+    public enum powerUpType { SpeedBoost, HealthBoost, Invincibility};
 
 
     // Start is called before the first frame update
@@ -41,6 +41,10 @@ public class PowerUp : MonoBehaviour
                 case powerUpType.HealthBoost:
                     _affectedTank = collision.gameObject;
                     StartCoroutine(HealthBoostTank());
+                    break;
+                case powerUpType.Invincibility:
+                    _affectedTank = collision.gameObject;
+                    StartCoroutine(InvincibleTank());
                     break;
 
             }
@@ -69,11 +73,25 @@ public class PowerUp : MonoBehaviour
 
     }
 
+    IEnumerator InvincibleTank()
+    {
+        _affectedTank.GetComponent<TankHealth>().m_isInvincible = true;
+        _meshRenderer.enabled = false;
+        _collider.enabled = false;
+        yield return new WaitForSeconds(_powerUpTime);
+        PowerUpOver();
+
+    }
+
     void PowerUpOver()
     {
         if (_powerUpType == powerUpType.SpeedBoost)
         {
             _affectedTank.GetComponent<TankMovement>().m_Speed = _tankNormalSpeed;
+        }
+        if (_powerUpType == powerUpType.Invincibility)
+        {
+            _affectedTank.GetComponent<TankHealth>().m_isInvincible = false;
         }
         _meshRenderer.enabled = true;
         _collider.enabled = true;

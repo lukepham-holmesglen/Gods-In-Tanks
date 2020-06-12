@@ -17,6 +17,7 @@ using UnityEngine.UI;
         private ParticleSystem m_ExplosionParticles;        // The particle system the will play when the tank is destroyed.
         public float m_CurrentHealth;                      // How much health the tank currently has.
         private bool m_Dead;                                // Has the tank been reduced beyond zero health yet?
+        public bool m_isInvincible = false;
 
 
         private void Awake ()
@@ -45,6 +46,10 @@ using UnityEngine.UI;
 
         public void TakeDamage (float amount)
         {
+        if (m_isInvincible)
+        {
+            return;
+        }
             // Reduce current health by the amount of damage done.
             m_CurrentHealth -= amount;
 
@@ -69,7 +74,7 @@ using UnityEngine.UI;
         }
 
 
-        private void OnDeath ()
+        public void OnDeath ()
         {
             // Set the flag so that this function is only called once.
             m_Dead = true;
