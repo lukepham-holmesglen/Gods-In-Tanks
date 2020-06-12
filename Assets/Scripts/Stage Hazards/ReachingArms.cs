@@ -1,39 +1,36 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class ReachingArms : MonoBehaviour
 {
-    private GameObject _affectedTank;
-    private MeshRenderer _meshRenderer;
-    private float Timer = 0f;
+    [SerializeField] private List<Transform> _reachingArmSpawnPoints = new List<Transform>();
+    [SerializeField] private GameObject _reachingArmsPrefab;
+
+    [SerializeField] private float _spawnDuration = 2f;
+
+    private bool isSpawningReachingArms = true;
 
     void Start()
     {
-        _meshRenderer = GetComponent<MeshRenderer>();
-        _meshRenderer.enabled = false;
+        StartCoroutine(SpawnReachingArms());
     }
 
-    void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        Timer = 0f;
+        
     }
 
-    void OnTriggerStay(Collider collision)
+    IEnumerator SpawnReachingArms()
     {
-        if (collision.gameObject.tag == "Player")
+        while (isSpawningReachingArms)
         {
-            _affectedTank = collision.gameObject;
-            Timer += Time.deltaTime;
-            if (Timer > 5)
-            {
-                DeathHands();
-            }
+            int spawnPositionIndex = Random.Range(0, _reachingArmSpawnPoints.Count); // or Count can't remember right, anyway the length of the array list
+            GameObject spawnedReachingArms = Instantiate(_reachingArmsPrefab, _reachingArmSpawnPoints[spawnPositionIndex].position, _reachingArmSpawnPoints[spawnPositionIndex].rotation);
+            yield return new WaitForSeconds(_spawnDuration);
+            Destroy(spawnedReachingArms);
         }
+
     }
 
-    void DeathHands()
-    {
-        _affectedTank.GetComponent<TankHealth>().m_CurrentHealth = -10;
-        _affectedTank.GetComponent<TankHealth>().SetHealthUI();
-        _meshRenderer.enabled = true;
-    }
 }
