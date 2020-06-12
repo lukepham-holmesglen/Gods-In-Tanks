@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1eff82b205a72544b96528aa38ef7130
+guid: 9cc2ddeb5f5f30741beda1aae163d878
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ammo_refill
-    second: {fileID: 2100000, guid: 8e6475c798e115c44ae42cb701dbdf3d, type: 2}
+    second: {fileID: 2100000, guid: b71ffc8090b53464ab48493b67e8bca2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
