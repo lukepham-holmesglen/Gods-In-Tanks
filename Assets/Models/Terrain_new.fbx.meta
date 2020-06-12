@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f826d6afe88af0488d3d1cb9ea4e801
+guid: 281a55aac53fc8d4790ffc160c06915c
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Boat
     second: {fileID: 2100000, guid: ca3298dff34be2749bcbc997a12307de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YellowLight
+    second: {fileID: 2100000, guid: 2ebf33c8c66048e4392138d1501e6be3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 1
