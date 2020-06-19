@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e8b0757939fc4ff43b6e7827c018a177
+=======
+guid: 91299246c45914176a19836166ac3ae8
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
@@ -11,7 +15,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Brown2
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1738d0f575708e14ba78a57e3713de4a, type: 2}
+=======
+    second: {fileID: 2100000, guid: 2afeec4cdc72546b5a12cf60500afaa3, type: 2}
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

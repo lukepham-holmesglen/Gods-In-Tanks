@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 002e2a607f5b64c48be0b3b0d8b8bfdd
+=======
+guid: 362f3d4a338cf4f8abfd71b15819cafd
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
@@ -10,6 +14,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+<<<<<<< HEAD
       name: M_Boat
     second: {fileID: 2100000, guid: ca3298dff34be2749bcbc997a12307de, type: 2}
   - first:
@@ -17,14 +22,25 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Main
     second: {fileID: 2100000, guid: d294b849725a9164dabf2a9ece43bed7, type: 2}
+=======
+      name: Main
+    second: {fileID: 2100000, guid: 117c220fd1c1f402283824b1ec254f9d, type: 2}
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Treads
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 08111e89781f5f5488759fa6798c8a46, type: 2}
   materials:
     materialImportMode: 1
     materialName: 1
+=======
+    second: {fileID: 2100000, guid: 07c50bd29efe64841b1eeef7b0bfa427, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
     materialSearch: 1
     materialLocation: 0
   animations:
@@ -49,7 +65,11 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
+<<<<<<< HEAD
     isReadable: 0
+=======
+    isReadable: 1
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -57,12 +77,21 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+<<<<<<< HEAD
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
+=======
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -71,11 +100,16 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
+<<<<<<< HEAD
     indexFormat: 0
+=======
+    indexFormat: 1
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< HEAD
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -83,6 +117,15 @@ ModelImporter:
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+=======
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -105,7 +148,11 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
+<<<<<<< HEAD
   animationType: 2
+=======
+  animationType: 1
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0
