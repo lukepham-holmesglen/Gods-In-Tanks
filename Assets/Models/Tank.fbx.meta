@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 362f3d4a338cf4f8abfd71b15819cafd
+=======
+guid: 002e2a607f5b64c48be0b3b0d8b8bfdd
+>>>>>>> 7965cd7bf4079829f683841f64b91f6efedc2058
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable:
@@ -16,12 +20,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Main
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 117c220fd1c1f402283824b1ec254f9d, type: 2}
+=======
+    second: {fileID: 2100000, guid: 7bf8d2af4abab5a439e4b76421c345a1, type: 2}
+>>>>>>> 7965cd7bf4079829f683841f64b91f6efedc2058
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Treads
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 07c50bd29efe64841b1eeef7b0bfa427, type: 2}
+=======
+    second: {fileID: 2100000, guid: d2f959999c26f5c4492bd402918b98b0, type: 2}
+>>>>>>> 7965cd7bf4079829f683841f64b91f6efedc2058
   materials:
     materialImportMode: 1
     materialName: 1
