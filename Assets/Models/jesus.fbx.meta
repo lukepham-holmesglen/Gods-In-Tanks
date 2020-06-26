@@ -12,7 +12,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert1
+      name: jesus
     second: {fileID: 2100000, guid: 8e3df4d710e415a46a9d18de3aa65110, type: 2}
   materials:
     materialImportMode: 1
