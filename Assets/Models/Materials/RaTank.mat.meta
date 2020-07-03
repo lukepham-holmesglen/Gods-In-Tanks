@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: e6d337507552fbc45baae6e88e3ee7d0
+NativeFormatImporter:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Models/Materials/Main.mat.meta
+guid: 117c220fd1c1f402283824b1ec254f9d
+NativeFormatImporter:
+=======
+guid: 8efba63ed25464f44b4c17d0926312bc
+PrefabImporter:
+>>>>>>> 7965cd7bf4079829f683841f64b91f6efedc2058:Assets/Prefabs/Dock.prefab.meta
+=======
+guid: 7bf8d2af4abab5a439e4b76421c345a1
+NativeFormatImporter:
+>>>>>>> 7965cd7bf4079829f683841f64b91f6efedc2058
+>>>>>>> 8491c4c8efef8bef090d6235aeb15afb7f573d32
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
